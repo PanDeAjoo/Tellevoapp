@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="login-section ion-padding floating-container">
+    <div class="heading ion-padding">
+      <div class="user-icon">
+        <div class="user-image">
+          <!-- Aquí puedes agregar la imagen o foto del usuario -->
+          <img src="../../assets/media/anonimo.png" >
+        </div>
+      </div>
+      <h1 class="login-text">Bienvenido</h1>
+    </div>
+    <div class="login-form ion-padding">
+      <div class="form-input">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">USUARIO</ion-label>
+          <ion-input [(ngModel)]="usuario"  labelPlacement="floating" placeholder="********" ></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">CONTRASEÑA</ion-label>
+          <ion-input [(ngModel)]="password"  type="password" 
+          labelPlacement="floating"
+           placeholder="********"></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div class="action-buttons ion-padding">
+      <ion-button size="large" class="login-button"(click)="irMenu()">Iniciar Sesión</ion-button>
+      <ion-button fill="default" routerLink="/recuperarpass">Recuperar contraseña</ion-button>
+      <ion-button class="signup-button" size="large" fill="outline" routerLink="/register-select">Registro</ion-button>
+    </div>
+    <!--imagen-->
+    <div class="Logo-login">
+      <img src="../../assets/media/Logo_DuocUC.png" alt="">
+    </div>
+  </div>
+</ion-content>

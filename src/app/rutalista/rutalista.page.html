@@ -1,0 +1,87 @@
+<ion-header>
+  
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <!--//////////////////////BTN menu///////////////////////////////-->
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!--//////////////////////Letras Folder///////////////////////////////-->
+    <ion-title >VIAJE INICIADO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="background-image">
+    <img src="../../assets/media/escudo.png" alt="Imagen de fondo">
+  </div>
+<!--////////////////////////////////////CONTENIDO///////////////////////////////////////-->
+<h2 style="text-align: center;">Buen Viaje Estudiante</h2>
+<ion-card class="coworker-card">
+  <ion-item>
+     
+    <ion-button slot="end" fill="clear"  routerLink="/fincarrera" >
+      <p style="font-size: 1.5rem;">$1.320</p>
+      <ion-icon size="large" name="checkmark-done-circle"></ion-icon>
+    </ion-button>
+    <ion-label>
+      <h1 style="font-size: 1.5rem;">Destino</h1>
+      <p style="font-size: 1rem; color:#04115c ;">Entre Tongo y los Vilos 6551</p>
+    </ion-label>
+  </ion-item>
+</ion-card>
+<ion-card class="coworker-card">
+  <img src="../../assets/media/card-coworker-header.png" class="header-img"/>
+  <ion-card-content>
+    <ion-list  style="border-radius: 15px;" lines="none">
+      <ion-item>
+        <ion-button slot="end" fill="clear" >
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-half"></ion-icon>
+          <ion-icon color="#000547" name="link-outline" ></ion-icon>
+        </ion-button>
+        <ion-avatar slot="start">
+          <img src="../../assets/media/card-coworker-avatar.png"/>
+        </ion-avatar>
+        <ion-label>
+          <h1>John Parks</h1>
+          <p>Conductor de profesion</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-button class="map-button" fill="clear" routerLink="/rutalista">
+  <div class="map-container">
+    <img class="map" src="../../assets/media/map.png" alt="">
+  </div>
+</ion-button>
+
+
+
+
+<ion-fab horizontal="center" vertical="bottom" slot="fixed">
+  <ion-fab-button color="warning">
+    <ion-icon size="large" name="share"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="end">
+    <ion-fab-button color="danger" routerLink="/menuruta">
+      <ion-icon size="large" name="close-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+  <ion-fab-list bargr side="start">
+    <ion-fab-button color="primary">
+      <ion-icon size="large" name="invert-mode"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Imagen de fondo -->
+
+</ion-content>

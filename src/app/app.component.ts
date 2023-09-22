@@ -5,14 +5,13 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+  public appPages = [ //RAID QUE CONTIENE LOS ATAJES DEL FOLDER O MENU LATERAL//
+    { title: 'INICIO', url: '/home', icon: 'construct' },
+    { title: 'INICIO CONCUCTOR', url: '/homeconductor', icon:'construct'},
+    { title: 'CUENTA PASAJERO', url: '/pasajero', icon: 'construct'},
+    { title: 'CUENTA CONDUCTOR', url: '/conductor', icon: 'construct' },
+    { title: 'TU VIAJE', url: '/ruta', icon: 'construct' },
+    { title: 'CERRAR SESION', url: '/splash', icon: 'construct' },
+
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
 }

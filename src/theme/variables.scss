@@ -1,15 +1,51 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$app-primary: mat.define-palette(mat.$indigo-palette);
+$app-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$app-theme: mat.define-light-theme((
+  color: (
+    primary: $app-primary,
+    accent: $app-accent,
+    warn: $app-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($app-theme);
+
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+	--ion-color-primary: #000547;
+	--ion-color-primary-rgb: 0,5,71;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 255,255,255;
+	--ion-color-primary-shade: #00043e;
+	--ion-color-primary-tint: #1a1e59;
+
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
@@ -74,21 +110,39 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** mycolor ---------------------------------------------------------------------**/
+	--ion-color-mycolor: #000547;
+	--ion-color-mycolor-rgb: 0,5,71;
+	--ion-color-mycolor-contrast: #ffffff;
+	--ion-color-mycolor-contrast-rgb: 255,255,255;
+	--ion-color-mycolor-shade: #00043e;
+	--ion-color-mycolor-tint: #1a1e59;
+}
+.ion-color-mycolor {
+	--ion-color-base: var(--ion-color-mycolor);
+	--ion-color-base-rgb: var(--ion-color-mycolor-rgb);
+	--ion-color-contrast: var(--ion-color-mycolor-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-mycolor-contrast-rgb);
+	--ion-color-shade: var(--ion-color-mycolor-shade);
+	--ion-color-tint: var(--ion-color-mycolor-tint);
 }
 
-@media (prefers-color-scheme: dark) {
+
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
    */
 
   body {
-    --ion-color-primary: #428cff;
-    --ion-color-primary-rgb: 66,140,255;
+    --ion-color-primary: #000547;
+    --ion-color-primary-rgb: 0,5,71;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
-    --ion-color-primary-shade: #3a7be0;
-    --ion-color-primary-tint: #5598ff;
+    --ion-color-primary-shade: #00043e;
+    --ion-color-primary-tint: #1a1e59;
+  
 
     --ion-color-secondary: #50c8ff;
     --ion-color-secondary-rgb: 80,200,255;
@@ -145,6 +199,7 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+    
   }
 
   /*

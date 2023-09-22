@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <!--//////////////////////BTN menu///////////////////////////////-->
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!--//////////////////////Letras Folder///////////////////////////////-->
+    <ion-title >INICIO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="background-image">
+    <img src="../../assets/media/escudo.png" alt="Imagen de fondo">
+  </div>
+  <!-- Encabezado -->
+    <div class="header">
+      <ion-card class="coworker-card">
+            <ion-item>
+              <ion-button slot="end" fill="clear" >
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon color="#000547" name="link-outline" ></ion-icon>
+              </ion-button>
+              <ion-avatar slot="start">
+                <img src="../../assets/media/juanacleto.jpg"/>
+              </ion-avatar>
+              <ion-label>
+                <h2>Junacleto Ristaceo</h2>
+                <p>Pongale Parienteee</p>
+              </ion-label>
+            </ion-item>
+      </ion-card>
+    </div>
+  <!-- Contenido principal -->
+  <div class="content">
+    <!-- Título -->
+    <h1>Bienvenido a TeLLEvo App</h1>
+    <!-- Descripción -->
+    <p>Que ir a estudiar sea más que una carrera</p>
+    <!-- Cuadro de búsqueda -->
+    <div class="search-bar">
+      <ion-button size="large" class="navegar-button" routerLink="/menuruta">
+        <ion-input placeholder="¿A dónde vas?" clearInput="true"></ion-input>
+      </ion-button>
+    </div>
+  </div>
+<!--////////////////////////////////////SUGERENCIAS///////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+<div class="titulo">
+  <h4>Sugerencias</h4>
+  <ion-button fill="clear" class="ver-mas">Ver mas</ion-button>
+</div>
+
+<div class="sugerencias-container">
+  <!-- Tarjeta de sugerencia 1 -->
+  <ion-card class="sugerencia">
+    <ion-img src="../../assets/media/Maipu.jpeg" alt="Sugerencia 1"></ion-img>
+  </ion-card>
+
+  <!-- Tarjeta de sugerencia 2 -->
+  <ion-card class="sugerencia">
+    <ion-img src="../../assets/media/sede sancarlosapoquindo-1920x600.jpg" alt="Sugerencia 2"></ion-img>
+  </ion-card>
+  
+  <!-- Tarjeta de sugerencia 3 -->
+  <ion-card class="sugerencia">
+    <ion-img src="../../assets/media/sedes-campus.jpg" alt="Sugerencia 3"></ion-img> 
+  </ion-card>
+  
+  <!-- Tarjeta de sugerencia 4 -->
+  <ion-card class="sugerencia">
+    <ion-img src="../../assets/media/valparaiso_IMG_0313_1920-1040x600.jpg" alt="Sugerencia 4"></ion-img>
+  </ion-card>
+</div>
+
+<!-- Segunda fila: ion-buttons -->
+<div class="sede-buttons">
+  <ion-button fill="clear">Maipu</ion-button>
+  <ion-button fill="clear">Apoquindo</ion-button>
+  <ion-button fill="clear">Campus</ion-button>
+  <ion-button fill="clear">Valparaiso</ion-button>
+</div>
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+<ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="primary">
+    <ion-icon name="caret-up"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button color="light" routerLink="/home">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" routerLink="/pasajero">
+      <ion-icon name="person" ></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" royterLink="">
+      <ion-icon name="card"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="danger" routerLink="/splash">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+  <div class="logo-pag ion-text-center" >
+    <div>
+      <img src="../../assets/media/Logo_DuocUC.png" alt="Imagen de fondo">      
+    </div>
+  </div>
+  
+</ion-content>

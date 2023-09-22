@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <!--//////////////////////BTN menu///////////////////////////////-->
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!--//////////////////////Letras Folder///////////////////////////////-->
+    <ion-title >CUENTA PASAJERO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="background-image">
+    <img src="../../assets/media/escudo.png" alt="Imagen de fondo">
+  </div>
+  <!-- Encabezado -->
+  <div class="header">
+    <!-- Logo de tu aplicación -->
+    <div class="logo">
+      <img src="../../assets/media/escudo.png" alt="Tu Logo">
+    </div>
+    <!-- Botón para abrir el menú de navegación o realizar otra acción -->
+  </div>
+<!--////////////////////////////////////CONTENIDO///////////////////////////////////////////////-->
+
+<ion-card class="coworker-card">
+  <ion-card-content>
+    <ion-list  style="border-radius: 15px;" lines="none">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/media/juanacleto.jpg"/>
+        </ion-avatar>
+        <ion-label>
+          <h2>Junacleto Ristaceo</h2>
+          <p>Pasa cambios de profesion</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="phone-portrait-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>(569) 8554-6739</h2>
+          <p>Celular</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h3>J.Ristaceo.Bonaparte@gmial.com</h3>
+          <p>Correo</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<div class="sede-buttons-a">
+  <ion-button expand="block" fill="clear" routerLink="/actividad">ACTIVIDAD</ion-button>
+  <ion-button expand="block" fill="clear" routerLink="/splash">CERRAR SESSION</ion-button>
+</div>
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+<ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="primary">
+    <ion-icon name="caret-up"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button color="light" routerLink="/home">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" routerLink="/pasajero">
+      <ion-icon name="person" ></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" royterLink="">
+      <ion-icon name="card"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="danger" routerLink="/splash">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+  <!-- Imagen de fondo -->
+  <div class="logo-pag ion-text-center">
+    <div>
+      <img src="../../assets/media/Logo_DuocUC.png" alt="Imagen de fondo">      
+    </div>
+  </div>
+  
+</ion-content>

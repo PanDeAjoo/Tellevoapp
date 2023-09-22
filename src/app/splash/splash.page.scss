@@ -1,0 +1,24 @@
+
+.contenedor-logo{
+    margin-top: 150px;
+    
+}
+.contenedor-logo ion-img{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+mat-spinner {
+    margin-top: 200px;
+    position: absolute;
+    top: calc(50% + 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.logo-pag {
+    margin-top: 20px;
+    position: absolute;
+    top: calc(50% + 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

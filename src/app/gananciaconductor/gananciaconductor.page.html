@@ -1,0 +1,113 @@
+<ion-header>
+  
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <!--//////////////////////BTN menu///////////////////////////////-->
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!--//////////////////////Letras Folder///////////////////////////////-->
+    <ion-title >GANANCIAS SEMANAL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="background-image">
+    <img src="../../assets/media/escudo.png" alt="Imagen de fondo">
+  </div>
+<!--////////////////////////////////////CONTENIDO///////////////////////////////////////-->
+<ion-card class="coworker-card">
+  <ion-item> 
+    <ion-button slot="end" fill="clear" routerLink="/rutaconductor">
+    </ion-button>
+    <ion-label>
+      <h1 style="font-size: 1.5rem;">Total Semanal:</h1>
+      <p style="font-size: 1rem; color:#04115c ;">$28.280</p>
+    </ion-label>
+  </ion-item>
+</ion-card>
+
+
+<ion-card class="apps-card">
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+    <ion-card-title style="text-align: center;">Detalle de Viajes</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/media/mr musculo.png"/>
+        </ion-thumbnail>
+        <ion-label>
+          <h3>Mr.Musculo</h3>
+          <p>Psaje Brilla Brilla</p>
+          <p>$6.320</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/media/mine.png"/>
+        </ion-thumbnail>
+        <ion-label>
+          <h3>Mr.Mine</h3>
+          <p>Av. NoteEntendi</p>
+          <p>$8.320</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/media/bob.jpg"/>
+        </ion-thumbnail>
+        <ion-label>
+          <h3>Spongebob's</h3>
+          <p>Av Fondo de Bikini</p>
+          <p>$11.320</p>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/media/sosa.jpg"/>
+        </ion-thumbnail>
+        <ion-label>
+          <h3>Julianito Sosa</h3>
+          <p>Psje Siempre libre</p>
+          <p>$2.320</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+<ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="primary">
+    <ion-icon name="caret-up"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button color="light" routerLink="/homeconductor">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" routerLink="/conductor">
+      <ion-icon name="person" ></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" routerLink="/actividad">
+      <ion-icon name="timer"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" routerLink="/gananciaconductor">
+      <ion-icon name="card"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="danger" routerLink="/splash">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+<!-- Imagen de fondo -->
+
+</ion-content>

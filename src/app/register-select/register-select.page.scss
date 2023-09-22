@@ -1,0 +1,65 @@
+.user-image {
+    width: 100px;
+    height: 100px; 
+    background-color: #b3b9be6c; 
+    border-radius: 50%;
+    display: inline-block; 
+    overflow: hidden;
+  }
+.login-text{
+    text-align: center;
+}
+//////////////////////////////////////////////////////////////////////////////
+//@media (max-width: 768px) {
+//////////////////////////////////////////////////////////////////////////////
+    .login-section{
+        height: 70vh;
+        width: 100%;
+        max-width: 500px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        margin: auto;
+        //border-radius: 20px;
+        //border-top-left-radius: 46px;
+        //border-top-right-radius: 46px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        width: 90%;
+        max-width: 400px;
+
+        .heading{
+            margin-top: 30px;
+            h1{
+                font-size: 2.6rem;
+                font-weight: bolder;
+            }
+        }
+//////////////////////////////////////////////////////////////////////////////
+        .action-buttons{
+            text-align: center;
+            .viajero-button{
+//////////////////////////////////////////////////////////////////////////////
+                width: 100%;
+                font-size: 1.5rem;
+//////////////////////////////////////////////////////////////////////////////
+                --background: #f9b801 ;
+                width: 100%;
+                font-weight: bold;
+            }
+            .conductor-button{
+                --border-color: #b4b4b4;
+                color: #000000;
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-top:163px;
+                width: 100%;
+            }
+        }
+        
+    }
+//////////////////////////////////////////////////////////////////////////////  
+//////////////////////////////////////////////////////////////////////////////
